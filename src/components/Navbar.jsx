@@ -69,7 +69,7 @@ function DrawerAppBar(props) {
                     <Typography
                         variant="h5"
                         color='primary'
-                        className='font-extrabold text-lg'
+                        className='font-extrabold text-2xl'
                         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                     >
                         HB.
