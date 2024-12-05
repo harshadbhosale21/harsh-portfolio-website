@@ -1,4 +1,4 @@
-import { Button, Grid, Typography } from '@mui/material'
+import { Button, Grid, IconButton, Typography } from '@mui/material'
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import TypewriterComponent from 'typewriter-effect';
@@ -36,13 +36,16 @@ const HomePage = () => {
                                         <Button size='small' variant='contained' color='primary' className='font-bold me-2' startIcon={<i className="ri-file-fill"></i>}>My Resume</Button>
                                         <Button size='small' variant='outlined' color='info' className='font-bold ms-2' startIcon={<i className="ri-mail-fill"></i>}>Contact Me</Button>
                                     </div>
-                                    <div className="w-full my-3">
-                                        <Typography className='mt-3 italic text-center text-lg md:text-start lg:text-start font-semibold text-white'>
-                                            My Dailing Coding Actividy:
-                                        </Typography>
-                                        <Typography>
-
-                                        </Typography>
+                                    <div className="w-full my-3 flex justify-center md:justify-start lg:justify-start">
+                                        <IconButton href='https://github.com/harshadbhosale21' target='_blank' aria-label='capture screenshot'>
+                                            <i className='ri-github-fill text-info-main hover:text-primary-main' />
+                                        </IconButton>
+                                        <IconButton href='https://www.linkedin.com/in/harshadbhosale21' target='_blank' aria-label='capture screenshot'>
+                                            <i className='ri-linkedin-box-fill text-info-main hover:text-primary-main' />
+                                        </IconButton>
+                                        <IconButton href='https://x.com/HarshadNBhosale' target='_blank' aria-label='capture screenshot'>
+                                            <i className='ri-twitter-x-fill text-info-main hover:text-primary-main' />
+                                        </IconButton>
                                     </div>
                                 </div>
                             </Grid>
@@ -86,7 +89,7 @@ const HomePage = () => {
                     {/* Section-3  */}
                     <section className='py-8 md:py-16  lg:py-16'>
                         <Typography className='text-center text-white text-2xl md:text-4xl lg:text-4xl font-bold'>My Work <span className='text-primary-main'>Experience</span></Typography>
-                        <div className="p-2 md:p-4 lg:p-4">
+                        <div className="">
                             <ExperienceStepper />
                         </div>
                     </section>

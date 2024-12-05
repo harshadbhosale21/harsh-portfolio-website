@@ -13,6 +13,9 @@ export default {
         primary: {
           main: "#c104de",
         },
+        info: {
+          main: "#00BFFF"
+        }
       }
     },
   },
